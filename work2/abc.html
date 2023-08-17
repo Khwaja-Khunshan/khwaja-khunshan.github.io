@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+      /* Add a hover effect */
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+
+      /* Add a subtle shadow effect */
+      .shadow-1-strong {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      /* Lightbox Styles */
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 9999;
+
+      }
+
+      .lightbox img {
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+        margin: 20px auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .lightbox-caption {
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+        pointer-events: auto;
+        
+      }
+
+      /* Lightbox Animation */
+      .fade-in {
+        animation: fadeIn 0.5s;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+</head>
+<body>
+    <section><div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(1)">
+        <img
+          src="assets/img/team/a.jpg"
+          alt="Boat on Calm Water"
+        />
+        <div style="pointer-events: all;" class="lightbox-caption ">X</div>
+      </div>
+
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(2)">
+        <img
+          src="assets/img/team/b.jpg"
+          alt="Wintry Mountain Landscape"
+        />
+        <div class="lightbox-caption">a
+            X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(3)">
+        <img
+          src="assets/img/team/asd.jpg"
+          alt="Mountains in the Clouds"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(5)">
+        <img
+        src="assets/img/team/k.jpeg"
+        alt="Waves at Sea"
+        />
+        <div class="lightbox-caption">x</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(5)">
+        <img
+        src="assets/img/team/l.jpeg"
+        alt="Waves at Sea"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(3)">
+        <img
+          src="assets/img/team/c.jpeg"
+          alt="Mountains in the Clouds"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(4)">
+        <img
+        src="assets/img/team/e.jpg"
+                  alt="Boat on Calm Water"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(6)">
+        <img
+        src="assets/img/team/i.jpeg"
+          alt="Yosemite National Park"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(3)">
+        <img
+          src="assets/img/team/j.jpeg"
+          alt="Mountains in the Clouds"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(5)">
+        <img
+        src="assets/img/team/d.jpg"
+        alt="Waves at Sea"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(6)">
+        <img
+        src="assets/img/team/f.jpeg"
+          alt="Yosemite National Park"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(6)">
+        <img
+        src="assets/img/team/g.jpg"
+          alt="Yosemite National Park"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(4)">
+        <img
+        src="assets/img/team/h.jpeg"
+                  alt="Boat on Calm Water"
+        />
+        <div class="lightbox-caption">
+            X
+        </div>
+      </div>
+      <div class="gallery-item shadow-1-strong rounded mb-4" onclick="openLightbox(5)">
+        <img
+        src="assets/img/team/m.jpg"
+        alt="Waves at Sea"
+        />
+        <div class="lightbox-caption">X</div>
+      </div>
+      
+    </div>
+  </div></div>
+</section>
+    
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img src="" alt="" id="lightboxImage" class="fade-in">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script>
+    // Lightbox functionality
+    function openLightbox(index) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+
+      const images = [
+        "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
+        "https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp",
+        "https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp",
+        "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
+        "https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp",
+        "https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+      ];
+
+   
+
+      lightboxImage.src = images[index - 1];
+      lightboxCaption.textContent = captions[index - 1];
+
+      lightbox.style.display = 'flex';
+      setTimeout(() => lightbox.classList.add('fade-in'), 10); // Add fade-in animation
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('fade-in'); // Remove fade-in animation
+      setTimeout(() => lightbox.style.display = 'none', 200); // Wait for animation to complete before hiding
+    }
+  </script>
+  <!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="close-button" onclick="closeLightbox()">&times;</div>
+    <img src="" alt="" id="lightboxImage" class="fade-in">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+  
+  <script>
+    // Lightbox functionality
+    function openLightbox(index) {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightboxImage');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+  
+      const images = [
+        "assets/img/team/a.jpg",
+        "assets/img/team/b.jpg",
+        "assets/img/team/asd.jpg",
+        "assets/img/team/c.jpeg",
+        "assets/img/team/e.jpg",
+        "assets/img/team/i.jpeg",
+        "assets/img/team/j.jpeg",
+        "assets/img/team/k.jpeg",
+        "assets/img/team/l.jpeg",
+        "assets/img/team/m.jpg"
+      ];
+  
+      const captions = [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ];
+  
+      lightboxImage.src = images[index - 1];
+      lightboxCaption.textContent = captions[index - 1];
+  
+      lightbox.style.display = 'flex';
+      setTimeout(() => lightbox.classList.add('fade-in'), 10); // Add fade-in animation
+    }
+  
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.classList.remove('fade-in'); // Remove fade-in animation
+      setTimeout(() => lightbox.style.display = 'none', 200); // Wait for animation to complete before hiding
+    }
+  </script>
+  
+</body>
+</html>
