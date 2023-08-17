@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Two Cards in a Row</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .card-container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    } 
+
+    .card2 {
+      flex-basis: 45%;
+      max-width: 45%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    /* Adjust the width for smaller screens */
+    @media (max-width: 768px) {
+      .card2 {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container2">
+    <div class="card2">
+      <!-- Content for Card 1 -->
+      <h2>SAFETY MEASURES</h2>
+      <p>This is the content of Card 1.</p>
+    </div>
+    <div class="card2">
+      <!-- Content for Card 2 -->
+      <h2>Card 2</h2>
+      <p>This is the content of Card 2.</p>
+    </div>
+  </div>
+</body>
+</html>
