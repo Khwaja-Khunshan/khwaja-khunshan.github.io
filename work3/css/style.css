@@ -1,0 +1,475 @@
+body {
+    background: linear-gradient(#d9f0f7, #eef6f8);
+    overflow-x: hidden;
+  } 
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(1, 70, 1), rgb(51, 255, 0));
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(rgb(110, 180, 245), rgb(1, 1, 112));
+    border-radius: 20px;
+}
+#mySVG {
+    position: fixed;
+    top: 15%;
+    height: 90px;
+    margin-left: -610px;
+}
+.nav-active{
+    background-color: #ff4880;;
+    color: white !important;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px;
+    text-align: center;
+}
+.nav-item1{
+    margin-left: 350px;
+}
+.nav-item1:hover{
+    border-bottom: solid  #ff4880;
+}
+.nav-item:hover{
+    border-bottom: solid  #ff4880;
+}
+.navbar-shadow{ 
+    box-shadow: 10px 10px 10px #e9e9e9;
+}
+.img-cloud{
+    margin-left: 350px !important;
+    margin-top: -320px !important;
+}
+.banner_text{
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 117px;
+    height: 700px;
+}
+
+.banner_text button{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #ff4880;
+}
+.banner_text button:hover{
+border-radius: 10px;
+text-align: center;
+cursor: pointer;
+font-weight: 500;
+background-color: #271344;;
+color: white;
+border: 1px solid #2b010e;
+}
+    .banner_text h3{
+    font-family: cursive;
+    font-weight: 400;
+    color: #ff4880;
+}
+.banner_text h1{
+    font-weight: 1500px;
+    color: #271344;
+}
+
+.custom-subheading{
+    font-family: "Schoolbell, Sans-serif";
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    color: #ff4880;
+}
+.nav-link1{
+    width: 70px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.why-heading{
+    color: #ff4880;
+    font-family: cursive;
+    letter-spacing: 3px;
+    font-weight: 600;
+      
+}
+.why-heading2{
+    font-size: 40px;
+    color: #1b0d30;
+    clear: both;
+    line-height: 1.2;
+}
+.card-body1{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background-color: #FF6666;
+    margin-bottom: 15px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px !important;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 10px#df4040;
+}
+.card-body1 h3{
+    font-size: 25px;
+    font-family: cursive;
+}
+
+.card-body1 img{
+    height: 160px;
+    width: 160px;
+    margin-left: 44px !important;
+    border: dashed;
+    padding: 10px;
+}
+.card-body2{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background-color: #FFC000;
+    margin-bottom: 15px;
+    font-size: 17px;
+    margin-left: 30px !important;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 10px #cc9901;
+}
+.card-body2 img{
+    height: 160px;
+    width: 160px;
+    margin-left: 44px !important;
+    border: dashed;
+    padding: 10px;
+}
+.card-body2 h3{
+    font-size: 25px;
+    font-family: cursive;
+}
+.card-body3{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background-color: #ABCD52;
+    margin-bottom: 15px;
+    font-size: 17px;
+    margin-left: 30px !important;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 10px#354214;
+}
+.card-body3 img{
+    height: 160px;
+    width: 160px;
+    margin-left: 44px !important;
+    border: dashed;
+    padding: 10px;
+}
+.card-body3 h3{
+    font-size: 25px;
+    font-family: cursive;
+}
+.card-body4{
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    background-color: #1AB9FF;
+    margin-bottom: 15px;
+    font-size: 17px;
+    margin-left: 30px !important;
+    border-radius: 20px !important;
+    box-shadow: 10px 10px 10px#043e57;
+}
+.card-body4 img{
+    height: 160px;
+    width: 160px;
+    margin-left: 44px !important;
+    border: dashed;
+    padding: 10px;
+}
+.card-body4 h3{
+    font-size: 25px;
+    font-family: cursive;
+}
+.f-btn{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    border: 1px solid #ff4880;
+}
+.f-btn:hover{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    border: 1px solid #ff4880;
+    padding: 12px;
+}
+.second-card{
+    margin-left: 130px !important;
+}
+.card-heading1{
+    font-size: 25px;
+    color: #1b0d30;
+    font-weight: bold;
+}
+.card-heading2{
+    font-size: 25px;
+    color: #1b0d30;
+    font-weight: bold;
+}
+.card-heading3{
+    font-size: 25px;
+    color: #1b0d30;
+    font-weight: bold;
+}
+.featurette1{
+    margin-right: 400px !important;
+}
+.featurette2{
+    margin-left: 330px;
+    margin-top: -145px;
+}
+.featurette-container h3{
+    color: rgb(2, 2, 78);
+    font-size: 1.2rem;
+}
+.featurette-container h1{
+    color: rgb(2, 2, 78);
+}
+.featurette-container button{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    font-size: 1rem;
+    border: 5px solid #ff4880;
+}
+.featurette-container button:hover{
+border-radius: 10px;
+text-align: center;
+cursor: pointer;
+font-weight: 500;
+background-color: #271344;;
+color: white;
+border: 5px solid  #271344;
+}
+.kids1{
+    color: rgb(2, 2, 78);
+}
+.footer{
+    background-color: #351C5A;
+    color: white;
+}
+input{
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.input-button{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #ff4880;
+}
+.input-button:hover{
+    border-radius: 10px;
+text-align: center;
+cursor: pointer;
+font-weight: 500;
+background-color: #f0f0f0;;
+color: rgb(101, 1, 141);
+border: 1px solid #2b010e;
+}
+.form-div{
+    background-image: url("../css/images/gallery-2-745x600.jpg");
+    margin-top: 200px ;
+}
+.iframe-video{
+    margin-top: -152px !important;
+    margin-left: -25px !important;
+}
+.teacher-button{
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    font-size: 1rem;
+    border: 5px solid #ff4880;
+    margin-left: 610px;
+}
+.teacher-button:hover{
+border-radius: 10px;
+text-align: center;
+cursor: pointer;
+font-weight: 500;
+background-color: #271344;;
+color: white;
+border: 5px solid  #271344;
+}
+/* Moiz */
+.shop-h1{
+    
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.shop-h3{
+    color:rgb(236, 199, 77);
+    font-family: cursive;
+}
+
+.form-control {
+    font-size: 13px;
+    border-color: #dde0e1;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.bgForm{
+    background: #1ab9ff;
+}
+.Cl_btn{
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #ff4880;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid #ff4880;
+}
+.Cl_btn:hover{
+border-radius: 10px;
+text-align: center;
+cursor: pointer;
+font-weight: 500;
+background-color: #271344;;
+color: white;
+border: 5px solid  #271344;
+}
+.banner-contact{
+    background-position: 100%;  
+    height: 550px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: 
+   linear-gradient(to bottom,rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4) 100%),
+   url("../images/bg-page-title\ contact.jpg") no-repeat;
+   background-position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+}
+.container-fluid-icon{
+    margin-top:30px ;
+}
+.banner-shop{
+    background-position: 100%;  
+    height: 550px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: 
+   linear-gradient(to bottom,rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4) 100%),
+   url("../images/bg-page-title\ shop.jpg") no-repeat;
+   background-position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+}
+.card-title-shop{
+    color: rgb(1, 1, 83);
+    text-align: center;
+}
+.card-text-shop{
+    text-align: center;
+    color:  #ff4880 ;
+}
+.banner-Enrollment{
+    background-position: 100%;  
+    height: 550px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: 
+   linear-gradient(to bottom,rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4) 100%),
+   url("../images/bg-Enrollment.jpg") no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+}
+/* Muzammil */
+.classes-p{
+    color: #ff4880;
+}
+
+.banner-classes {
+    background-position: 100%;
+    height: 600px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4), rgba(0, 0, 0, .4) 100%), url("images/classes-title-1.jpg") no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+    font-family: fredoka one, sans-serif;
+    font-weight: 400px;
+}
+
+.classes-h3{
+    color: rgb(250, 250, 58);
+    font-family: cursive;
+    font-size: 25px;
+}
+.gallery-banner{
+    background-position: 100%;  
+    height: 850px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: 
+   linear-gradient(to bottom,rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4) 100%),
+   url("../images/1280px-Bates_Hall_-_Boston_Public_Library.jpg") no-repeat;
+   background-position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+}
+.about-us-banner{
+    background-position: 100%;  
+    height: 850px;
+    width: 100%;
+    margin-top: 10px;
+    background-attachment: inherit;
+    background: 
+   linear-gradient(to bottom,rgba(0,0,0,.4), rgba(0,0,0,.4), rgba(0,0,0,.4) 100%),
+   url("../images/about us banner.jpg") no-repeat;
+   background-position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white !important;
+}
